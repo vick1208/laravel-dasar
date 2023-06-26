@@ -2,6 +2,7 @@
 
 namespace App\Http;
 
+use App\Http\Middleware\MiddlewareExample;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
@@ -43,6 +44,10 @@ class Kernel extends HttpKernel
             'throttle:api',
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
+        'pzn' =>[
+            // MiddlewareExample::class,
+            'example:PZN,401'
+        ]
     ];
 
     /**
@@ -63,5 +68,6 @@ class Kernel extends HttpKernel
         'signed' => \App\Http\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+        'example' => \App\Http\Middleware\MiddlewareExample::class
     ];
 }
