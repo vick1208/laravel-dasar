@@ -23,7 +23,7 @@ class RoutingTest extends TestCase
     public function testFallback()
     {
         $this->get('/random')
-        ->assertSeeText('Page Not Found ');
+        ->assertSeeText('Page Not Found | Sorry');
     }
     public function testRouteParameter()
     {
