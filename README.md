@@ -68,3 +68,5 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ### Note
 
 Project ini menggunakan Laravel 9.50.2
+
+Project ini dibuat berdasarkan pembelajaran kursus udemy [programmer zaman now](https://www.udemy.com/course/laravel-pemula-sampai-mahir/)
