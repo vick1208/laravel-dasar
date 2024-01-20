@@ -9,9 +9,9 @@ use Tests\TestCase;
 
 class FileControllerTest extends TestCase
 {
-    
-    public function testUpload(){
 
+    public function testUpload(){
+// uncomment extension gd
         $picture = UploadedFile::fake()->image('vic.png');
 
         $this->post('/file/upload',[
