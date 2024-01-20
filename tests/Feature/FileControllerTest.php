@@ -11,7 +11,7 @@ class FileControllerTest extends TestCase
 {
 
     public function testUpload(){
-// uncomment extension gd
+// uncomment extension gd (XAMPP)
         $picture = UploadedFile::fake()->image('vic.png');
 
         $this->post('/file/upload',[
