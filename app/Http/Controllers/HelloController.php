@@ -12,10 +12,11 @@ class HelloController extends Controller
 
     public function __construct(HelloService $helloService)
     {
-     $this->helloService = $helloService;   
+        $this->helloService = $helloService;
     }
 
-    public function hello(string $name,Request $request): string{
+    public function hello(string $name, Request $request): string
+    {
         // $request->path();
         // $request->url();
         // $request->fullUrl();
