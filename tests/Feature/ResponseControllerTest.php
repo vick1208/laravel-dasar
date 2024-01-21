@@ -45,6 +45,6 @@ class ResponseControllerTest extends TestCase
     public function testDownload()
     {
         $this->get('/response/type/download')
-            ->assertDownload('ll_chopper.jpg');
+            ->assertDownload('reddit-june.jpg');
     }
 }
